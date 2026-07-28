@@ -32,15 +32,32 @@ if (empty(array_filter($error))) {
 
    $rt= mysqli_query($connect,$insert);
    echo $rt;
+
+
    if ($rt) {
-       header('location:')
-   }else{echo $rt;}
+
+    $_SESSION['user']=['name'=>$name,'email'=>$email];
+       header('location:../index.php');
+   }else{}
 
 }
    
    
 
 
+}
+
+
+
+
+//login
+
+$email_log='';
+$password_log='';
+
+
+if (isset($_POST['login'])) {
+    echo 'helo';
 }
 
 

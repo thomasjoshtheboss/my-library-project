@@ -33,7 +33,7 @@ require_once('../backend/Auth.php');
             <input type="text" name="confirm_password" placeholder="confirm password" class="authInput">
             <p><?php echo $error['confirm_password'] ?></p>
         </div>
-<div class="check">
+        <div class="check">
         <input type="checkbox" name="checkbox" id="" class="checkbox">
         <p class="check1">i accept all items & conditions</p>
         </div>

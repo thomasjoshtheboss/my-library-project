@@ -1,3 +1,7 @@
+<?php
+require_once("config.php");
+var_dump($_SESSION['user']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
