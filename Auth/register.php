@@ -38,7 +38,7 @@ require_once('../backend/Auth.php');
         <p class="check1">i accept all items & conditions</p>
         </div>
         <button class="regButton" name="register">Register now</button>
-<p class="login">Already have an account?<a href="">login</a></p>
+<p class="login">Already have an account?<a href="./login.php">login</a></p>
 </form>
     </div>
 
