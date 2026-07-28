@@ -1,3 +1,10 @@
+<?php
+require_once("../config.php");
+require_once('../backend/Auth.php');
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +16,22 @@
 <body>
     <div class="whole">
         <p class="head">Registration</p>
-        <form action="">
+        <form method="POST">
         <div>
-            <input type="text" name="name" placeholder="enter name" class="authInput">
+            <input type="text" name="name" placeholder="enter name" value="<?php echo  $name?>" class="authInput">
+            <p><?php echo $error['name'] ?></p>
         </div>
         <div>
-            <input type="text" name="email" placeholder="enter Email" class="authInput">
+            <input type="text" name="email" placeholder="enter Email" value="<?php echo  $email?>" class="authInput">
+            <p><?php echo $error['email'] ?></p>
         </div>
        <div>
          <input type="text" name="password" placeholder="enter password" class="authInput">
+         <p><?php echo $error['password'] ?></p>
        </div>
         <div>
             <input type="text" name="confirm_password" placeholder="confirm password" class="authInput">
+            <p><?php echo $error['confirm_password'] ?></p>
         </div>
 <div class="check">
         <input type="checkbox" name="checkbox" id="" class="checkbox">
