@@ -82,7 +82,7 @@ $pass=md5($password);
  $my=mysqli_query($connect,$select);
  $rows=mysqli_num_rows($my);
  if ($rows===0) {
-    echo 'The User Does not exist';
+    //echo 'The User Does not exist';
  }else{
     $user=mysqli_fetch_assoc($my);
 

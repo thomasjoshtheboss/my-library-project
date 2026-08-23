@@ -20,37 +20,218 @@ require_once('./backend/auth.php');
     
 <?php include_once('Nav.php')?>
 
+<p class="reco">Recommended</p>
+
+<div class="full">
+ 
+
+            
+            <div class="entire">
+
+            <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+            <div class="backg">
+
+            <div class="words">
+                <p class="word1">Name:Stand off</p>
+
+                <p class="word2">author: Alexis</p>
+            </div>
+
+            <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+            <p class="gena">Genra: comedy</p>
+
+            <p class="own">owner:alexis</p>
+
+            <div class="boxes">
+                <p class="brr">borrow book</p>
+                <p class="down">Download</p>
+            </div>
+
+            </div>
+
+            </div>
 
 
-<div class="as">
- <p class="jjp">Recent books</p>
-<div class="bodyq">
+            <div class="entire">
+
+            <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+            <div class="backg">
+
+            <div class="words">
+                <p class="word1">Name:Stand off</p>
+
+                <p class="word2">author: Alexis</p>
+            </div>
+
+            <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+            <p class="gena">Genra: comedy</p>
+
+            <p class="own">owner:alexis</p>
+
+            <div class="boxes">
+                <p class="brr">borrow book</p>
+                <p class="down">Download</p>
+            </div>
+
+            </div>
+
+            </div>
+
+        <div class="entire">
+
+        <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+        <div class="backg">
+
+        <div class="words">
+            <p class="word1">Name:Stand off</p>
+
+            <p class="word2">author: Alexis</p>
+        </div>
+
+        <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+        <p class="gena">Genra: comedy</p>
+
+        <p class="own">owner:alexis</p>
+
+        <div class="boxes">
+            <p class="brr">borrow book</p>
+            <p class="down">Download</p>
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="entire">
+
+        <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+        <div class="backg">
+
+        <div class="words">
+            <p class="word1">Name:Stand off</p>
+
+            <p class="word2">author: Alexis</p>
+        </div>
+
+        <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+        <p class="gena">Genra: comedy</p>
+
+        <p class="own">owner:alexis</p>
+
+        <div class="boxes">
+            <p class="brr">borrow book</p>
+            <p class="down">Download</p>
+        </div>
+
+        </div>
+
+        </div>
 
 
- <div class="mmm">
- <?php $select="SELECT name_book,about,image,genre,book FROM book ";
- $my=mysqli_query($connect,$select);
- $not=mysqli_fetch_assoc($my);
- ?>
- <div class="bod"><img src="./uploaded_images/<?php echo $not['image'] ?>" alt="" class="saki"></div>
- <div class="gom"> 
-<p class="tag">Name:  <i class="saka"><?php echo $not['name_book'] ?></i></p>
 
-   <p class="tag1">about: <?php echo $not['about'] ?>   </p>
-   <p>genre: <?php echo $not['genre'] ?>  </p>
-   <p class="tag2">Rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <a href="upload_book/<?php echo $not['book'] ?>"  download><button class="loo">Download</button></a>
-   
-   </div>
 </div>
 
+<div class="space-up"></div>
+
+<p class="trend">Trending</p>
+
+<div class="trending">
+
+        
+
+
+        <div class="entire">
+
+
+
+            <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+            <div class="backg">
+
+            <div class="words">
+                <p class="word1">Name:Stand off</p>
+
+                <p class="word2">author: Alexis</p>
+            </div>
+
+            <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+            <p class="gena">Genra: comedy</p>
+
+            <p class="own">owner:alexis</p>
+
+            <div class="boxes">
+                <p class="brr">borrow book</p>
+                <p class="down">Download</p>
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="entire">
+
+                <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+                <div class="backg">
+
+                <div class="words">
+                    <p class="word1">Name:Stand off</p>
+
+                    <p class="word2">author: Alexis</p>
+                </div>
+
+                <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+                <p class="gena">Genra: comedy</p>
+
+                <p class="own">owner:alexis</p>
+
+                <div class="boxes">
+                    <p class="brr">borrow book</p>
+                    <p class="down">Download</p>
+                </div>
+
+                </div>
+
+        </div>
+
+        <div class="entire">
+
+                <img src="../my-library-project/upload_bookWIN_20260718_16_29_08_Pro.jpg" alt="" srcset="" class="ggs">
+
+                <div class="backg">
+
+                <div class="words">
+                    <p class="word1">Name:Stand off</p>
+
+                    <p class="word2">author: Alexis</p>
+                </div>
+
+                <p class="abu">About: Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+
+                <p class="gena">Genra: comedy</p>
+
+                <p class="own">owner:alexis</p>
+
+                <div class="boxes">
+                    <p class="brr">borrow book</p>
+                    <p class="down">Download</p>
+                </div>
+
+                </div>
+
+        </div>
+
 </div>
 
 
-</div>
-
-</body>
-</html>
+</body></html>

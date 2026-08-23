@@ -6,17 +6,18 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .momo{
-    width: 50%;
-    border-radius: 50px;
+margin-left: 12%;
+    width: 58%;
+    border-radius: 25px;
     height: 5vh;
     border: 1px solid rgb(217, 236, 219);
     text-align: center;
-   background-color: rgb(158, 204, 165);
+   background-color: rgb(247, 250, 248);
     
 }
 .tilt{
     font-size: 20px;
-    
+   margin-left: 20%;
 }
 
 .momo:focus{
@@ -25,15 +26,19 @@ body{
 
 .nav{
     display: flex;
-    background-image: linear-gradient(rgb(88, 219, 101),rgb(138, 202, 142));
+    background-image: linear-gradient(rgb(57, 206, 72),rgb(144, 207, 243));
 justify-content: space-between;
 align-items: center;
 padding:10px 30px;
 position: fixed;
 width: 100%;
+color: white;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-
+}
+.bud{
+    display: flex;
+width: 30%;
+margin-left: 12%;
 }
 a{
     color: inherit;
@@ -41,7 +46,7 @@ a{
 }
 .pro{
     display: flex;
-    width: 10%;
+    width: 30%;
 }
 .jjp{
   
@@ -57,7 +62,7 @@ a{
 }
 
 .tag{
-    border-bottom: 1px solid rgb(104, 104, 245);
+
     margin-bottom: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -71,14 +76,14 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .loop{
-    background-color: rgb(144, 226, 171);
+    background-color: rgb(119, 216, 151);
     width: fit-content;
     border: none;
-    padding: 4px 5px;
-  
+    padding: 4px 9px;
+  border-radius: 10px;
     color: white;
         padding: 10px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .loo{
     margin-left: 7%;
@@ -94,6 +99,9 @@ a{
 .loo:hover{
     color: rgb(78, 212, 78);
 }
+.hom{
+    width: 20%;
+}
 
 .kol{
 
@@ -104,20 +112,15 @@ a{
     margin-left: 2%;
    
 }
-.mmm{
-  
-display: flex;
-border: 1px solid rgb(207, 207, 207);
-width: fit-content;
-padding: 10px;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
- background-color: inherit;
-}
+
 
 .bodyq{
     display: flex;
     padding: 1%;
 
+}
+.bod{
+    width: 40%;
 }
 
 .saka{
@@ -134,3 +137,96 @@ font-weight: 600;
     width: 100%;
 }
 
+
+
+.reco, .trend{
+    margin-left: 3%;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(105, 176, 218);
+    width: 14%;
+}
+.ggs{
+    height: 30vh;
+    width: 100%;
+}
+.full,.trending{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.entire{
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ padding: 7px;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.own{
+    font-size: 13px;
+    margin-top: 1%;
+}
+.words{
+   
+    font-size: 13px;
+    display: flex;
+    
+}
+.word1{
+    background-color:  rgb(219, 217, 217);
+    width: fit-content;
+    padding: 5px;
+    margin-top: -0.5%;
+    border-radius: 5px;
+    
+}
+.entire1{
+    margin-top: 1%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ padding: 7px;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.reco1{
+    margin-top: 6%;
+     margin-left: 3%;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(105, 176, 218);
+    width: 50%;
+}
+.word2{
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+.abu{
+ font-size: 13px;
+margin-top: 1%;
+ color: rgb(204, 204, 204);
+}
+.gena{
+    font-size: 13px;
+    margin-top: 1%;
+}
+.boxes{
+    display: flex;
+    margin-top: 1%;
+}
+.brr{
+    width: fit-content;
+    font-size: 13px;
+    background-color: rgb(55, 111, 194);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1%;
+}
+.down{
+     width: fit-content;
+    font-size: 13px;
+    background-color: rgb(38, 177, 11);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2%;
+}
