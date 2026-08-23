@@ -1,7 +1,7 @@
 <div class="nav">
 
     <div class="hom">
-        <p class="tilt"> My libary </p>
+        <p class="tilt"> <a href="<?php echo $URL?>"> My libary </a></p>
     </div>
 
    <input type="text" placeholder="search" class="momo" />
