@@ -82,11 +82,9 @@ $pass=md5($password);
  $my=mysqli_query($connect,$select);
  $rows=mysqli_num_rows($my);
  if ($rows===0) {
-<<<<<<< Updated upstream
-    //echo 'The User Does not exist';
-=======
+
     $error['head']='The User Does not exist';
->>>>>>> Stashed changes
+  
  }else{
     $user=mysqli_fetch_assoc($my);
 
