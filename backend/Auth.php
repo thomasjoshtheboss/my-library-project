@@ -4,7 +4,7 @@ $password='';
 $email='';
 $comfirm_password='';
 
-$error=['name'=>'','email'=>'','password'=>'','confirm_password'=>''];
+$error=['name'=>'','email'=>'','password'=>'','confirm_password'=>'','image'=>'','about'=>''];
 
 function register()  {
     global $connect,$error,$name,$email,$password;
@@ -78,7 +78,7 @@ if (isset($_POST['login'])) {
    
 }
 $pass=md5($password);
- $select="SELECT name,email FROM user WHERE email='$email' AND password='$pass'";
+ $select="SELECT id,email,password FROM user WHERE email='$email' AND password='$pass'";
  $my=mysqli_query($connect,$select);
  $rows=mysqli_num_rows($my);
  if ($rows===0) {
@@ -96,3 +96,5 @@ $pass=md5($password);
 login();
 
 
+
+// creation of image

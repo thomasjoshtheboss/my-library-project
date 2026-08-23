@@ -1,3 +1,9 @@
+<?php
+require_once('config.php');
+require_once('./backend/book.php');
+require_once('./backend/auth.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,12 @@
     <title>Document</title>
 </head>
 <body>
+
+
     
 <?php include_once('Nav.php')?>
+
+
 
 <div class="as">
  <p class="jjp">Recent books</p>
@@ -18,157 +28,27 @@
 
 
  <div class="mmm">
+ <?php $select="SELECT name_book,about,image,genre,book FROM book ";
+ $my=mysqli_query($connect,$select);
+ $not=mysqli_fetch_assoc($my);
+ ?>
+ <div class="bod"><img src="./uploaded_images/<?php echo $not['image'] ?>" alt="" class="saki"></div>
+ <div class="gom"> 
+<p class="tag">Name:  <i class="saka"><?php echo $not['name_book'] ?></i></p>
 
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
+   <p class="tag1">about: <?php echo $not['about'] ?>   </p>
+   <p>genre: <?php echo $not['genre'] ?>  </p>
+   <p class="tag2">Rating: 9.5/10</p>
 
    <div class="kol">
    <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
+   <a href="upload_book/<?php echo $not['book'] ?>"  download><button class="loo">Download</button></a>
+   
    </div>
 </div>
 
 </div>
 
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-</div>
- <p class="jjp">Reccomended</p>
- <div class="bodyq">
-
-
- <div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-</div>
-
- <p class="jjp">Explore</p>
-
-<div class="bodyq">
-
- <div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
-
-<div class="mmm">
-
-<div class="bod"><img src="images/images.jpg" alt="" class="saki"></div>
-<div class="gom">
-   <p class="tag">Name:  <i class="saka"> Sakamoto Days</i></p>
-   <p class="tag1">about: Lorem ipsum <br>dolor sit , perspiciatis, debitis<br> totam </p>
-   <p class="tag2">rating: 9.5/10</p>
-
-   <div class="kol">
-   <button class="loop">Borrow book</button>
-   <p class="loo">Download</p>
-   </div>
-</div>
-
-</div>
 
 </div>
 

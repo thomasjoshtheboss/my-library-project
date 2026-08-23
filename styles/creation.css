@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .bigp{
     font-size: 22px;
@@ -19,19 +20,19 @@ input{
 .nam{
     padding: 1.5%;
  margin-top: 3%;
-    width: 25%;
-    padding-right: 15%;
+    width: 40%;
+    padding-right: 2%;
     border: 1px solid grey;
     border-radius: 5px;
 }
-.img{
+.file{
     margin-top: 5%;
+    visibility: hidden;
 }
 .save{
     margin-top: 2%;
     margin-left: 0.5%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-background-color:  blue;
+background-color:  rgb(73, 73, 224);
 width:42%;
 padding: 1.5%;
 color: white;
@@ -39,4 +40,38 @@ border-radius: 20px;
 padding-left: 13%;
 padding-right: 13%;
 border: none;
+}
+
+.fake-upload{
+    margin-top: 2%;
+    margin-left: 0.5%;
+  
+background-color:  rgb(65, 197, 116);
+width:fit-content;
+padding:5px;
+color: white;
+border-radius: 7px;
+}
+
+.choose-pic{
+     margin-top: 2%;
+    margin-left: 0.5%;
+  
+background-color:  rgb(79, 231, 241);
+width:fit-content;
+padding:5px;
+color: white;
+border-radius: 7px;
+}
+.pic{
+    visibility: hidden;
+}
+.combine{
+    display: flex;
+}
+.preview{
+    margin-top: 2%;
+    height: 8vh;
+    display: none;
+
 }
