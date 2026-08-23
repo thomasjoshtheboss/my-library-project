@@ -1,7 +1,9 @@
 <?php 
 require_once('../config.php');
 require_once('../backend/Auth.php');
-
+if (isset($_SESSION['user'])) {
+    header("location:http://localhost/my-library-project/index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +14,7 @@ require_once('../backend/Auth.php');
     <link rel="stylesheet" href="../styles/auth.css">
 </head>
 <body>
+    <p> <?php echo $error['head'] ?> </p>
     <div class="whole">
         <p class="head">Login</p>
         <form method="POST">

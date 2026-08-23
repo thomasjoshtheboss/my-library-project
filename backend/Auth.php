@@ -4,7 +4,7 @@ $password='';
 $email='';
 $comfirm_password='';
 
-$error=['name'=>'','email'=>'','password'=>'','confirm_password'=>'','image'=>'','about'=>''];
+$error=['name'=>'','email'=>'','password'=>'','confirm_password'=>'','image'=>'','about'=>'','head'=>''];
 
 function register()  {
     global $connect,$error,$name,$email,$password;
@@ -82,7 +82,11 @@ $pass=md5($password);
  $my=mysqli_query($connect,$select);
  $rows=mysqli_num_rows($my);
  if ($rows===0) {
+<<<<<<< Updated upstream
     //echo 'The User Does not exist';
+=======
+    $error['head']='The User Does not exist';
+>>>>>>> Stashed changes
  }else{
     $user=mysqli_fetch_assoc($my);
 

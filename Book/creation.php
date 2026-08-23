@@ -1,7 +1,9 @@
 <?php 
 require_once('../config.php');
 require_once('../backend/book.php');
-require_once('../backend/auth.php');
+if (!isset($_SESSION['user'])) {
+    header('location:../Auth/login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +28,7 @@ require_once('../backend/auth.php');
         <p><?php echo $error['about'] ?></p>
 
          <input type="text" name="genre" id="" placeholder="Genre the book" class="nam">
-        <p><?php    echo $error['genre'] ?></p>
+        <p><?php echo $error['genre'] ?></p>
 
 
         
@@ -41,8 +43,8 @@ require_once('../backend/auth.php');
        <p class="choose-pic">choose picture of Book</p>     
        
   </div>
-   
-    <p><?php echo $error['image']; ?></p>
+   <p><?php echo $error['image']; ?></p>
+    
        <img src="" alt="" class="preview">
 
         <div>

@@ -19,19 +19,18 @@ function creation(){
         $error['about']='Please with what the boot if about';
         
     }else {
-          $error['abput']='';
+          $error['about']='';
         $about=$_POST['about'];
     }
 
     if (empty($_POST['genre'])) {
-      $error['genre']='Please write the type of book';
-      
+      $error['genre']='Please write the type of book'; 
     }else {
       $error['genre']='';
         $genre=$_POST['genre'];
     }
    $pic=$_FILES['pic'];
-   echo $pic['type'];
+   echo $pic['name'];
 
    $allowed_ext=['png','jpeg','jpg'];
     if (!str_starts_with($pic['type'],'image')) {
@@ -90,6 +89,24 @@ function creation(){
   }
 
 
-
 }
 creation();
+
+
+function selection(){
+  global $connect;
+    $select="SELECT owner,name_book,about,image,genre,book FROM book ";
+  $my=mysqli_query($connect,$select);
+  return $my;
+
+}
+selection();
+
+
+function owner($id){
+  global $connect;
+  $select="SELECT name FROM user WHERE id='$id'";
+  $my= mysqli_query($connect,$select);
+  $rt=mysqli_fetch_assoc($my);
+  return ($rt['name']);
+}
