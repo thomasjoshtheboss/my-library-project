@@ -3,8 +3,10 @@ require_once('config.php');
 require_once('./backend/book.php');
 require_once('./backend/auth.php');
  $books=selection();
-
-
+if (!isset($_SESSION['user'])){
+    header('./Auth/login.php');
+}
+echo owner(1);
 ?>
 <!DOCTYPE html>
 <html lang="en">

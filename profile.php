@@ -1,3 +1,6 @@
+<?php 
+require_once("config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,6 @@
 </head>
 <body>
     
-<?php include_once('Nav.php')?>
 <div class="manster">
  <div class="ftw" >
     <div class="homedrop">
@@ -20,7 +22,7 @@
      </div>
 
      <div class="hom2">
-      <i class="fa-solid fa-house miou"></i><p class="g">Discover</p>
+      <i class="fa-solid fa-house miou"></i><a href="./Book/creation.php"><p class="g">Add book</p></a>
      </div>
 
      <div class="hom3">
