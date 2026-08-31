@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.homedrop{
+    margin-top: 1%;
+    margin-left: 2%;
+height: 15vh;
+}
+.homedrop div{
+    margin-top: 29%;
+}
+.hom{
+    margin-top: 2%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.miou{
+    font-size: 18px;
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+}
+.hom0{
+ 
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom2{
+    margin-top: 12%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom3{
+    margin-top: 12%;
+   
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom4{
+    margin-top: 12%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom5{
+    margin-top: 12%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom6{
+    margin-top: 12%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hom7{
+    margin-top: 12%;
+    display: flex;
+    font-size: 11px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.homedrop{
+     width: 9%;
+    margin-top: 2%;
+    position: fixed;
+}
+.g{
+    
+    margin-top: 5px;
+    margin-left: 4%;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+.miou:hover{
+    background-color: rgb(122, 141, 223);
+    color: white;
+}
+.hom1{
+    margin-right: 2px;
+     margin-top: 25%;
+    display: flex;
+    font-size: 11px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.qq{
+    font-size: 18px;
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 10px;
+}
+.ge{
+    margin-left: 1.5%;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.qq:hover{
+    background-color: rgb(122, 141, 223);
+    color: white;
+}
+.vwy{
+    margin-top: 2%;
+
+}
+.cyw{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.ftw{
+border: 1px solid rgb(243, 243, 243);
+width: 20%;
+padding: 1%;
+padding-bottom: 5%;
+
+border-radius: 20px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.manster{
+    display:flex;
+}
+.photov2{
+    margin-left: 40px;
+    margin-top:20px;
+}
+.byw{
+   
+    margin-left:50px;
+}
+.cas{
+height: 40vh;
+}
+.dont{
+    display:flex;
+    
+    margin-top: 30px;
+}
+.wss{
+    margin-top:50px;
+}

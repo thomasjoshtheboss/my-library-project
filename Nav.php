@@ -8,12 +8,12 @@
 
 <div class="bud">
 
-   <p class="pro"><a href="./Book/creation.php"><i class="fa-regular fa-circle-user tt"></i><span>profile</span></a></p>
+   <p class="pro"><a href="profile.php"><i class="fa-regular fa-circle-user tt"></i><span>profile</span></a></p>
 
-   <p><a href="logout.php">logout</a></p>
+   <p><a href="logout.php">logout</a></p> 
 
 </div>
 </div>
 
 
-<div class="space-up"></div>
+ <div class="space-up"></div> 

@@ -4,10 +4,6 @@ require_once('./backend/book.php');
 require_once('./backend/auth.php');
  $books=selection();
 
-if (!isset($_SESSION['user'])){
-    header("location:Auth/login.php");
-
-};
 
 ?>
 <!DOCTYPE html>
